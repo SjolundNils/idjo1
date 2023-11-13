@@ -8,32 +8,32 @@
 </head>
 <body>
     <header>
-        <h1>IDJO1</h1>
+        <h1>I D J O 1</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Merch</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <h2>Welcome to IDJO1</h2>
             <p>We are a band established in Umeå and we love to make music.</p>
             <a href="#" class="btn">Listen Now</a>
         </section>
 
-        <section class="music">
+        <section id="music" class="music">
             <h2>Our Music</h2>
             <p>COMING SOON!!</p>
             <a href="#" class="btn">Listen Now</a>
         </section>
 
-        <section class="tour">
+        <section id="tour" class="tour">
             <h2>Upcoming Tour Dates</h2>
             <ul>
 
@@ -49,13 +49,13 @@
             <a href="#" class="btn">Buy Tickets</a>
         </section>
 
-        <section class="merch">
+        <section id="merch" class="merch">
             <h2>Merchandise</h2>
             <p>Check out our latest merchandise, available now in our online store.</p>
             <a href="#" class="btn">Shop Now</a>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <form action="#">
                 <label for="name">Name:</label>
@@ -73,7 +73,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 IDJO1. All rights reserved.</p>
+        <p> 2023 IDJO1&. All "rights" reserved.</p>
     </footer>
 </body>
 <head>
@@ -82,8 +82,9 @@
     <title>IDJO1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Jost', sans-serif;
             font-size: 16px;
             line-height: 1.5;
             color: #333;
@@ -98,8 +99,10 @@
 
         h1 {
             margin: 0;
-            font-size: 36px;
-            font-weight: 700;
+            font-size: 70px;
+            font-weight: 900;
+            font-family: 'Jost';
+            text-align: center;
         }
 
         nav ul {
@@ -137,7 +140,8 @@
 
         .hero h2 {
             font-size: 48px;
-            font-weight: 700;
+            font-weight: 900;
+            font-style: italic;
             margin: 0;
         }
 
@@ -246,7 +250,7 @@
             padding: 10px;
             font-size: 16px;
             border-radius: 5px;
-            border: none;
+            border: 3px solid #333;
             margin-bottom: 20px;
         }
 
@@ -279,5 +283,6 @@
             margin: 0;
             font-size: 16px;
         }
+
     </style>
 </head>
