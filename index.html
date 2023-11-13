@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>IDJO1</title>
+</head>
+<body>
+    <header>
+        <h1>IDJO1</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Merch</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to IDJO1</h2>
+            <p>We are a band established in Umeå and we love to make music.</p>
+            <a href="#" class="btn">Listen Now</a>
+        </section>
+
+        <section class="music">
+            <h2>Our Music</h2>
+            <p>COMING SOON!!</p>
+            <a href="#" class="btn">Listen Now</a>
+        </section>
+
+        <section class="tour">
+            <h2>Upcoming Tour Dates</h2>
+            <ul>
+
+                <li>COMING SOON!</li>
+
+            <!--
+                <li><span class="date">MM/DD/YYYY</span> - [insert venue name here], [insert city here]</li>
+                <li><span class="date">MM/DD/YYYY</span> - [insert venue name here], [insert city here]</li>
+                <li><span class="date">MM/DD/YYYY</span> - [insert venue name here], [insert city here]</li>
+            -->
+            
+            </ul>
+            <a href="#" class="btn">Buy Tickets</a>
+        </section>
+
+        <section class="merch">
+            <h2>Merchandise</h2>
+            <p>Check out our latest merchandise, available now in our online store.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IDJO1. All rights reserved.</p>
+    </footer>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDJO1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            z-index: 100;
+            background-image: url('img/Banner.jpg');
+            background-position: 100% 25%;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #666;
+        }
+
+        .music {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .music h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .music p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .tour {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .tour h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .tour ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tour li {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .merch {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .merch h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .merch p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .contact {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        form label {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 20px 0 5px;
+            text-align: left;
+        }
+
+        form input,
+        form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        form button {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            border: none;
+            margin-top: 20px;
+        }
+
+        form button:hover {
+            background-color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
